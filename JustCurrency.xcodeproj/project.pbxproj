@@ -3,15 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1656411A244B05A50036FFDE /* SegmentedControlItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16564119244B05A50036FFDE /* SegmentedControlItem.swift */; };
+		1656411C244B05D80036FFDE /* SegmentedControlItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1656411B244B05D80036FFDE /* SegmentedControlItemModel.swift */; };
+		1656411E244B087E0036FFDE /* ConfiguringWithModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1656411D244B087E0036FFDE /* ConfiguringWithModel.swift */; };
+		16564120244B08BF0036FFDE /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1656411F244B08BF0036FFDE /* UIConstants.swift */; };
+		16564122244B09020036FFDE /* SegmentedControlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16564121244B09020036FFDE /* SegmentedControlModel.swift */; };
 		16A71AD4244ACF0B0092E013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A71AD3244ACF0B0092E013 /* AppDelegate.swift */; };
 		16A71AD8244ACF0B0092E013 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A71AD7244ACF0B0092E013 /* ViewController.swift */; };
 		16A71ADD244ACF0C0092E013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16A71ADC244ACF0C0092E013 /* Assets.xcassets */; };
 		16A71AE0244ACF0C0092E013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16A71ADE244ACF0C0092E013 /* LaunchScreen.storyboard */; };
-		16A71AEB244ACF0C0092E013 /* JustCurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A71AEA244ACF0C0092E013 /* JustCurrencyTests.swift */; };
+		16AEA309244B0FB800AFF841 /* SegmentedControlModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AEA308244B0FB800AFF841 /* SegmentedControlModelTests.swift */; };
+		16ED83A5244AD9D000F3CF97 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ED83A4244AD9D000F3CF97 /* SegmentedControl.swift */; };
 		64907D7526E6871F1A661A55 /* Pods_JustCurrency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C13896D77C41FEFBC61310E /* Pods_JustCurrency.framework */; };
 		6793BE694EDFD46915C2E643 /* Pods_JustCurrencyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8274D343733DEA2CB6E32EA0 /* Pods_JustCurrencyTests.framework */; };
 /* End PBXBuildFile section */
@@ -27,6 +33,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16564119244B05A50036FFDE /* SegmentedControlItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlItem.swift; sourceTree = "<group>"; };
+		1656411B244B05D80036FFDE /* SegmentedControlItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlItemModel.swift; sourceTree = "<group>"; };
+		1656411D244B087E0036FFDE /* ConfiguringWithModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguringWithModel.swift; sourceTree = "<group>"; };
+		1656411F244B08BF0036FFDE /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		16564121244B09020036FFDE /* SegmentedControlModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlModel.swift; sourceTree = "<group>"; };
 		16A71AD0244ACF0B0092E013 /* JustCurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustCurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16A71AD3244ACF0B0092E013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16A71AD7244ACF0B0092E013 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,8 +45,9 @@
 		16A71ADF244ACF0C0092E013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16A71AE1244ACF0C0092E013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16A71AE6244ACF0C0092E013 /* JustCurrencyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustCurrencyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		16A71AEA244ACF0C0092E013 /* JustCurrencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustCurrencyTests.swift; sourceTree = "<group>"; };
 		16A71AEC244ACF0C0092E013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16AEA308244B0FB800AFF841 /* SegmentedControlModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlModelTests.swift; sourceTree = "<group>"; };
+		16ED83A4244AD9D000F3CF97 /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
 		2285ECCED5D6C150231E806A /* Pods-JustCurrency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustCurrency.release.xcconfig"; path = "Target Support Files/Pods-JustCurrency/Pods-JustCurrency.release.xcconfig"; sourceTree = "<group>"; };
 		3C13896D77C41FEFBC61310E /* Pods_JustCurrency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JustCurrency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		519F3970DD388F2711A8144B /* Pods-JustCurrencyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustCurrencyTests.debug.xcconfig"; path = "Target Support Files/Pods-JustCurrencyTests/Pods-JustCurrencyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -64,6 +76,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16564118244B058D0036FFDE /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				16564119244B05A50036FFDE /* SegmentedControlItem.swift */,
+				1656411B244B05D80036FFDE /* SegmentedControlItemModel.swift */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
 		16A71AC7244ACF0B0092E013 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +109,9 @@
 			isa = PBXGroup;
 			children = (
 				16A71AD3244ACF0B0092E013 /* AppDelegate.swift */,
+				1656411D244B087E0036FFDE /* ConfiguringWithModel.swift */,
+				16ED83A6244AF10B00F3CF97 /* SegmentedControl */,
+				1656411F244B08BF0036FFDE /* UIConstants.swift */,
 				16A71AD7244ACF0B0092E013 /* ViewController.swift */,
 				16A71ADC244ACF0C0092E013 /* Assets.xcassets */,
 				16A71ADE244ACF0C0092E013 /* LaunchScreen.storyboard */,
@@ -99,10 +123,28 @@
 		16A71AE9244ACF0C0092E013 /* JustCurrencyTests */ = {
 			isa = PBXGroup;
 			children = (
-				16A71AEA244ACF0C0092E013 /* JustCurrencyTests.swift */,
+				16AEA307244B0F6E00AFF841 /* SegmentedControlTests */,
 				16A71AEC244ACF0C0092E013 /* Info.plist */,
 			);
 			path = JustCurrencyTests;
+			sourceTree = "<group>";
+		};
+		16AEA307244B0F6E00AFF841 /* SegmentedControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				16AEA308244B0FB800AFF841 /* SegmentedControlModelTests.swift */,
+			);
+			path = SegmentedControlTests;
+			sourceTree = "<group>";
+		};
+		16ED83A6244AF10B00F3CF97 /* SegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				16ED83A4244AD9D000F3CF97 /* SegmentedControl.swift */,
+				16564121244B09020036FFDE /* SegmentedControlModel.swift */,
+				16564118244B058D0036FFDE /* Item */,
+			);
+			path = SegmentedControl;
 			sourceTree = "<group>";
 		};
 		8BA6CAE5607242E7B587B135 /* Pods */ = {
@@ -113,7 +155,6 @@
 				519F3970DD388F2711A8144B /* Pods-JustCurrencyTests.debug.xcconfig */,
 				7DA5DF2FFDC44D5453F95E9B /* Pods-JustCurrencyTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -293,7 +334,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1656411C244B05D80036FFDE /* SegmentedControlItemModel.swift in Sources */,
+				1656411E244B087E0036FFDE /* ConfiguringWithModel.swift in Sources */,
 				16A71AD8244ACF0B0092E013 /* ViewController.swift in Sources */,
+				16564120244B08BF0036FFDE /* UIConstants.swift in Sources */,
+				16564122244B09020036FFDE /* SegmentedControlModel.swift in Sources */,
+				1656411A244B05A50036FFDE /* SegmentedControlItem.swift in Sources */,
+				16ED83A5244AD9D000F3CF97 /* SegmentedControl.swift in Sources */,
 				16A71AD4244ACF0B0092E013 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,7 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16A71AEB244ACF0C0092E013 /* JustCurrencyTests.swift in Sources */,
+				16AEA309244B0FB800AFF841 /* SegmentedControlModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
