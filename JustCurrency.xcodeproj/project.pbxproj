@@ -12,6 +12,8 @@
 		16A71ADD244ACF0C0092E013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16A71ADC244ACF0C0092E013 /* Assets.xcassets */; };
 		16A71AE0244ACF0C0092E013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16A71ADE244ACF0C0092E013 /* LaunchScreen.storyboard */; };
 		16A71AEB244ACF0C0092E013 /* JustCurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A71AEA244ACF0C0092E013 /* JustCurrencyTests.swift */; };
+		64907D7526E6871F1A661A55 /* Pods_JustCurrency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C13896D77C41FEFBC61310E /* Pods_JustCurrency.framework */; };
+		6793BE694EDFD46915C2E643 /* Pods_JustCurrencyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8274D343733DEA2CB6E32EA0 /* Pods_JustCurrencyTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,12 @@
 		16A71AE6244ACF0C0092E013 /* JustCurrencyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustCurrencyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16A71AEA244ACF0C0092E013 /* JustCurrencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustCurrencyTests.swift; sourceTree = "<group>"; };
 		16A71AEC244ACF0C0092E013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2285ECCED5D6C150231E806A /* Pods-JustCurrency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustCurrency.release.xcconfig"; path = "Target Support Files/Pods-JustCurrency/Pods-JustCurrency.release.xcconfig"; sourceTree = "<group>"; };
+		3C13896D77C41FEFBC61310E /* Pods_JustCurrency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JustCurrency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		519F3970DD388F2711A8144B /* Pods-JustCurrencyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustCurrencyTests.debug.xcconfig"; path = "Target Support Files/Pods-JustCurrencyTests/Pods-JustCurrencyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7DA5DF2FFDC44D5453F95E9B /* Pods-JustCurrencyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustCurrencyTests.release.xcconfig"; path = "Target Support Files/Pods-JustCurrencyTests/Pods-JustCurrencyTests.release.xcconfig"; sourceTree = "<group>"; };
+		8274D343733DEA2CB6E32EA0 /* Pods_JustCurrencyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JustCurrencyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98811E923B95300444B7D105 /* Pods-JustCurrency.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustCurrency.debug.xcconfig"; path = "Target Support Files/Pods-JustCurrency/Pods-JustCurrency.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64907D7526E6871F1A661A55 /* Pods_JustCurrency.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6793BE694EDFD46915C2E643 /* Pods_JustCurrencyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +70,8 @@
 				16A71AD2244ACF0B0092E013 /* JustCurrency */,
 				16A71AE9244ACF0C0092E013 /* JustCurrencyTests */,
 				16A71AD1244ACF0B0092E013 /* Products */,
+				8BA6CAE5607242E7B587B135 /* Pods */,
+				AB552BA83B629929FD65BDE2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +105,27 @@
 			path = JustCurrencyTests;
 			sourceTree = "<group>";
 		};
+		8BA6CAE5607242E7B587B135 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98811E923B95300444B7D105 /* Pods-JustCurrency.debug.xcconfig */,
+				2285ECCED5D6C150231E806A /* Pods-JustCurrency.release.xcconfig */,
+				519F3970DD388F2711A8144B /* Pods-JustCurrencyTests.debug.xcconfig */,
+				7DA5DF2FFDC44D5453F95E9B /* Pods-JustCurrencyTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AB552BA83B629929FD65BDE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C13896D77C41FEFBC61310E /* Pods_JustCurrency.framework */,
+				8274D343733DEA2CB6E32EA0 /* Pods_JustCurrencyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,6 +133,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16A71AEF244ACF0C0092E013 /* Build configuration list for PBXNativeTarget "JustCurrency" */;
 			buildPhases = (
+				A830CDA8576250B3F86A280E /* [CP] Check Pods Manifest.lock */,
 				16A71ACC244ACF0B0092E013 /* Sources */,
 				16A71ACD244ACF0B0092E013 /* Frameworks */,
 				16A71ACE244ACF0B0092E013 /* Resources */,
@@ -117,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16A71AF2244ACF0C0092E013 /* Build configuration list for PBXNativeTarget "JustCurrencyTests" */;
 			buildPhases = (
+				7E9B5D485FC4DCBC7C4B4608 /* [CP] Check Pods Manifest.lock */,
 				16A71AE2244ACF0C0092E013 /* Sources */,
 				16A71AE3244ACF0C0092E013 /* Frameworks */,
 				16A71AE4244ACF0C0092E013 /* Resources */,
+				4370903689554AED5696BE68 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -187,6 +223,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4370903689554AED5696BE68 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JustCurrencyTests/Pods-JustCurrencyTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JustCurrencyTests/Pods-JustCurrencyTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JustCurrencyTests/Pods-JustCurrencyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E9B5D485FC4DCBC7C4B4608 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JustCurrencyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A830CDA8576250B3F86A280E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JustCurrency-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		16A71ACC244ACF0B0092E013 /* Sources */ = {
@@ -344,6 +444,7 @@
 		};
 		16A71AF0244ACF0C0092E013 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98811E923B95300444B7D105 /* Pods-JustCurrency.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -362,6 +463,7 @@
 		};
 		16A71AF1244ACF0C0092E013 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2285ECCED5D6C150231E806A /* Pods-JustCurrency.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -380,6 +482,7 @@
 		};
 		16A71AF3244ACF0C0092E013 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 519F3970DD388F2711A8144B /* Pods-JustCurrencyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -402,6 +505,7 @@
 		};
 		16A71AF4244ACF0C0092E013 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DA5DF2FFDC44D5453F95E9B /* Pods-JustCurrencyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
