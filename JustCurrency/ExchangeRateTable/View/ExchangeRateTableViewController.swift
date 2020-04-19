@@ -11,6 +11,7 @@ final class ExchangeRateTableViewController: CustomViewController<ExchangeRateTa
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Exchange Rate Table"
+        model?.fetchRates()
     }
 }
 

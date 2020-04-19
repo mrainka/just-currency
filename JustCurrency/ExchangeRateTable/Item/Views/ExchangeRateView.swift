@@ -38,7 +38,7 @@ final class ExchangeRateView: CustomView {
     override func configureLayout() {
         stackView?.snp.makeConstraints { $0.edges.equalToSuperview().inset(8) }
         separator?.snp.makeConstraints { $0.width.equalTo(CGFloat.pixel) }
-        codeLabel?.setContentHuggingPriority(.required, for: .horizontal)
+        codeLabel?.snp.makeConstraints { $0.width.equalTo(50) }
     }
 
     // MARK: - Adding the Subviews
@@ -88,6 +88,7 @@ final class ExchangeRateView: CustomView {
     private func addCodeLabel() {
         let label = Label(frame: .zero)
         label.font = .boldSystemFont(ofSize: 21)
+        label.textAlignment = .center
         stackView?.addArrangedSubview(label)
         codeLabel = label
     }
@@ -103,6 +104,7 @@ final class ExchangeRateView: CustomView {
     private func addNameLabel() {
         let label = Label(frame: .zero)
         label.font = .boldSystemFont(ofSize: 17)
+        label.numberOfLines = 0
         substackView?.addArrangedSubview(label)
         nameLabel = label
     }
