@@ -15,9 +15,17 @@ final class AppDelegate: UIResponder {
 
     private func configureWindow() {
         let window = UIWindow(frame: UIScreen.main.bounds)
-        window.rootViewController = ViewController()
+        window.rootViewController = Self.createRootView()
         window.makeKeyAndVisible()
         self.window = window
+    }
+
+    private static func createRootView() -> UINavigationController {
+        let view = ExchangeRateTableViewController()
+        view.configure(with: .init())
+        let navigatedView = UINavigationController(rootViewController: view)
+        navigatedView.navigationBar.isTranslucent = false
+        return navigatedView
     }
 }
 

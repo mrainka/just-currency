@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class SegmentedControl: UIView {
+final class SegmentedControl: CustomView {
 
     private var items: [SegmentedControlItem] {
         stackView?.arrangedSubviews.compactMap { $0 as? SegmentedControlItem } ?? []
@@ -49,31 +49,6 @@ final class SegmentedControl: UIView {
 
     // MARK: -
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-
-        clipsToBounds = true
-
-        layer.borderWidth = .pixel
-        updateBorderColor()
-
-        layer.cornerRadius = 6
-
-        addStackView()
-        configureLayoutOfStackView()
-    }
-
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-
-    private func addStackView() {
-        let stackView = UIStackView(frame: .zero)
-        stackView.distribution = .fillEqually
-        addSubview(stackView)
-        self.stackView = stackView
-    }
-
     private func createItem() -> SegmentedControlItem {
         let item = SegmentedControlItem(frame: .zero)
 
@@ -100,23 +75,30 @@ final class SegmentedControl: UIView {
         layer.borderColor = borderColor.resolvedColor(with: traitCollection).cgColor
     }
 
-    // MARK: - Configuring Stack View
+    // MARK: - Adding the Subviews
 
-    private func configureLayoutOfStackView() {
-        guard let stackView = stackView else { return }
+    override func addSubviews() {
+        addStackView()
+    }
 
-        stackView.translatesAutoresizingMaskIntoConstraints = false
+    private func addStackView() {
+        let stackView = UIStackView(frame: .zero)
+        stackView.distribution = .fillEqually
+        addSubview(stackView)
+        self.stackView = stackView
+    }
 
-        NSLayoutConstraint.activate([NSLayoutConstraint.Attribute.bottom, .left, .right, .top].map {
-            .init(
-                item: stackView,
-                attribute: $0,
-                relatedBy: .equal,
-                toItem: stackView.superview,
-                attribute: $0,
-                multiplier: 1,
-                constant: 0)
-        })
+    // MARK: - Configuring
+
+    override func configure() {
+        super.configure()
+
+        clipsToBounds = true
+
+        layer.borderWidth = .pixel
+        updateBorderColor()
+
+        layer.cornerRadius = 6
     }
 
     private func configureStackView(with items: [SegmentedControlItemModel]) {
@@ -136,6 +118,28 @@ final class SegmentedControl: UIView {
             .forEach { stackView.addArrangedSubview($0) }
     }
 
+    // MARK: Layout
+
+    override func configureLayout() {
+        configureLayoutOfStackView()
+    }
+
+    private func configureLayoutOfStackView() {
+        guard let stackView = stackView else { return }
+
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+
+        NSLayoutConstraint.activate([NSLayoutConstraint.Attribute.bottom, .left, .right, .top].map {
+            .init(
+                item: stackView,
+                attribute: $0,
+                relatedBy: .equal,
+                toItem: stackView.superview,
+                attribute: $0,
+                multiplier: 1,
+                constant: 0)
+        })
+    }
 }
 
 extension SegmentedControl: ConfigurableWithModel {

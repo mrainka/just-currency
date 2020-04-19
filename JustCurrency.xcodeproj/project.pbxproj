@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1642C879244B3D2600F5DF5E /* ExchangeRateTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1642C878244B3D2600F5DF5E /* ExchangeRateTableView.swift */; };
+		1642C87C244B3DBE00F5DF5E /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1642C87B244B3DBE00F5DF5E /* CustomViewController.swift */; };
+		1642C87E244B3F9D00F5DF5E /* ExchangeRateTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1642C87D244B3F9D00F5DF5E /* ExchangeRateTableViewModel.swift */; };
+		1642C880244B414D00F5DF5E /* CustomViewContaining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1642C87F244B414D00F5DF5E /* CustomViewContaining.swift */; };
+		1642C883244B41F900F5DF5E /* ExchangeRateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1642C882244B41F900F5DF5E /* ExchangeRateTableViewController.swift */; };
 		1656411A244B05A50036FFDE /* SegmentedControlItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16564119244B05A50036FFDE /* SegmentedControlItem.swift */; };
 		1656411C244B05D80036FFDE /* SegmentedControlItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1656411B244B05D80036FFDE /* SegmentedControlItemModel.swift */; };
 		1656411E244B087E0036FFDE /* ConfiguringWithModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1656411D244B087E0036FFDE /* ConfiguringWithModel.swift */; };
 		16564120244B08BF0036FFDE /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1656411F244B08BF0036FFDE /* UIConstants.swift */; };
 		16564122244B09020036FFDE /* SegmentedControlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16564121244B09020036FFDE /* SegmentedControlModel.swift */; };
+		16895FB8244B39E000925113 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16895FB7244B39E000925113 /* CustomView.swift */; };
 		16A0EEAC244B16E600D44E09 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A0EEAB244B16E600D44E09 /* Repository.swift */; };
 		16A0EEAF244B177200D44E09 /* Specification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A0EEAE244B177200D44E09 /* Specification.swift */; };
 		16A0EEB2244B195800D44E09 /* RepositoryAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A0EEB1244B195800D44E09 /* RepositoryAction.swift */; };
@@ -45,11 +51,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1642C878244B3D2600F5DF5E /* ExchangeRateTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateTableView.swift; sourceTree = "<group>"; };
+		1642C87B244B3DBE00F5DF5E /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
+		1642C87D244B3F9D00F5DF5E /* ExchangeRateTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateTableViewModel.swift; sourceTree = "<group>"; };
+		1642C87F244B414D00F5DF5E /* CustomViewContaining.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewContaining.swift; sourceTree = "<group>"; };
+		1642C882244B41F900F5DF5E /* ExchangeRateTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateTableViewController.swift; sourceTree = "<group>"; };
 		16564119244B05A50036FFDE /* SegmentedControlItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlItem.swift; sourceTree = "<group>"; };
 		1656411B244B05D80036FFDE /* SegmentedControlItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlItemModel.swift; sourceTree = "<group>"; };
 		1656411D244B087E0036FFDE /* ConfiguringWithModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguringWithModel.swift; sourceTree = "<group>"; };
 		1656411F244B08BF0036FFDE /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
 		16564121244B09020036FFDE /* SegmentedControlModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlModel.swift; sourceTree = "<group>"; };
+		16895FB7244B39E000925113 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		16A0EEAB244B16E600D44E09 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		16A0EEAE244B177200D44E09 /* Specification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specification.swift; sourceTree = "<group>"; };
 		16A0EEB1244B195800D44E09 /* RepositoryAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryAction.swift; sourceTree = "<group>"; };
@@ -100,6 +112,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1642C87A244B3DA300F5DF5E /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				16895FB7244B39E000925113 /* CustomView.swift */,
+				1642C87B244B3DBE00F5DF5E /* CustomViewController.swift */,
+				1642C87F244B414D00F5DF5E /* CustomViewContaining.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		1642C881244B41E800F5DF5E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1642C878244B3D2600F5DF5E /* ExchangeRateTableView.swift */,
+				1642C882244B41F900F5DF5E /* ExchangeRateTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		16564118244B058D0036FFDE /* Item */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +138,15 @@
 				1656411B244B05D80036FFDE /* SegmentedControlItemModel.swift */,
 			);
 			path = Item;
+			sourceTree = "<group>";
+		};
+		16895FB9244B3ABA00925113 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				1656411F244B08BF0036FFDE /* UIConstants.swift */,
+				1642C87A244B3DA300F5DF5E /* CustomView */,
+			);
+			path = UserInterface;
 			sourceTree = "<group>";
 		};
 		16A0EEA9244B16AE00D44E09 /* DataAccess */ = {
@@ -161,6 +201,8 @@
 			isa = PBXGroup;
 			children = (
 				16A53164244B2A94004D7927 /* ExchangeRateTableSpecification.swift */,
+				1642C881244B41E800F5DF5E /* View */,
+				1642C87D244B3F9D00F5DF5E /* ExchangeRateTableViewModel.swift */,
 				16A5316D244B3564004D7927 /* Models */,
 			);
 			path = ExchangeRateTable;
@@ -203,7 +245,7 @@
 				16A0EEA9244B16AE00D44E09 /* DataAccess */,
 				16A5316C244B3540004D7927 /* ExchangeRateTable */,
 				16ED83A6244AF10B00F3CF97 /* SegmentedControl */,
-				1656411F244B08BF0036FFDE /* UIConstants.swift */,
+				16895FB9244B3ABA00925113 /* UserInterface */,
 				16A71AD7244ACF0B0092E013 /* ViewController.swift */,
 				16A71ADC244ACF0C0092E013 /* Assets.xcassets */,
 				16A71ADE244ACF0C0092E013 /* LaunchScreen.storyboard */,
@@ -446,8 +488,11 @@
 			files = (
 				16A0EEB4244B199700D44E09 /* NetworkRepository.swift in Sources */,
 				1656411C244B05D80036FFDE /* SegmentedControlItemModel.swift in Sources */,
+				1642C87C244B3DBE00F5DF5E /* CustomViewController.swift in Sources */,
 				16A0EEB9244B1AD700D44E09 /* NetworkSpecification.swift in Sources */,
+				16895FB8244B39E000925113 /* CustomView.swift in Sources */,
 				16A0EEAF244B177200D44E09 /* Specification.swift in Sources */,
+				1642C880244B414D00F5DF5E /* CustomViewContaining.swift in Sources */,
 				1656411E244B087E0036FFDE /* ConfiguringWithModel.swift in Sources */,
 				16A53165244B2A94004D7927 /* ExchangeRateTableSpecification.swift in Sources */,
 				16A71AD8244ACF0B0092E013 /* ViewController.swift in Sources */,
@@ -457,10 +502,13 @@
 				16A53169244B2C94004D7927 /* AnyRepository.swift in Sources */,
 				16564122244B09020036FFDE /* SegmentedControlModel.swift in Sources */,
 				16A0EEBD244B1C6400D44E09 /* RepositoryActionError.swift in Sources */,
+				1642C883244B41F900F5DF5E /* ExchangeRateTableViewController.swift in Sources */,
 				16A0EEB7244B1A4400D44E09 /* NetworkRepositoryAction.swift in Sources */,
 				1656411A244B05A50036FFDE /* SegmentedControlItem.swift in Sources */,
+				1642C879244B3D2600F5DF5E /* ExchangeRateTableView.swift in Sources */,
 				16ED83A5244AD9D000F3CF97 /* SegmentedControl.swift in Sources */,
 				16A5316B244B30EB004D7927 /* ExchangeRate.swift in Sources */,
+				1642C87E244B3F9D00F5DF5E /* ExchangeRateTableViewModel.swift in Sources */,
 				16A71AD4244ACF0B0092E013 /* AppDelegate.swift in Sources */,
 				16A0EEAC244B16E600D44E09 /* Repository.swift in Sources */,
 				16A53167244B2B0D004D7927 /* ExchangeRateTable.swift in Sources */,

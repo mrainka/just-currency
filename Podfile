@@ -4,6 +4,7 @@ target 'JustCurrency' do
     use_frameworks!
 
     pod 'Alamofire'
+    pod 'SnapKit'
 
     target 'JustCurrencyTests' do
         inherit! :search_paths
