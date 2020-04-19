@@ -4,6 +4,8 @@ target 'JustCurrency' do
     use_frameworks!
 
     pod 'Alamofire'
+    pod 'RxCocoa'
+    pod 'RxSwift'
     pod 'SnapKit'
 
     target 'JustCurrencyTests' do

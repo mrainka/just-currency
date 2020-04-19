@@ -23,9 +23,7 @@ final class AppDelegate: UIResponder {
     private static func createRootView() -> UINavigationController {
         let view = ExchangeRateTableViewController()
         view.configure(with: .init())
-        let navigatedView = UINavigationController(rootViewController: view)
-        navigatedView.navigationBar.isTranslucent = false
-        return navigatedView
+        return .init(rootViewController: view)
     }
 }
 

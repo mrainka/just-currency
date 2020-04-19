@@ -47,6 +47,14 @@ final class SegmentedControl: CustomView {
         didSet { items.forEach { $0.selectedTextColor = selectedItemTextColor } }
     }
 
+    // MARK: - Intrinsic Content Size
+
+    static let intrinsicContentHeight = SegmentedControlItem(frame: .zero).intrinsicContentSize.height
+
+    override var intrinsicContentSize: CGSize {
+        .init(width: super.intrinsicContentSize.width, height: Self.intrinsicContentHeight)
+    }
+
     // MARK: -
 
     private func createItem() -> SegmentedControlItem {
