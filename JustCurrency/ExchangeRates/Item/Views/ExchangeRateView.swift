@@ -133,5 +133,7 @@ extension ExchangeRateView: ConfigurableWithModel {
         tradingDateLabel?.configure(with: model.tradingDate)
 
         nameLabel?.configure(with: model.name)
+
+        separator?.isHidden = model.code.isHidden
     }
 }

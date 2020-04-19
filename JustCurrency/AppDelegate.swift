@@ -22,7 +22,9 @@ final class AppDelegate: UIResponder {
 
     private static func createRootView() -> UINavigationController {
         let view = ExchangeRateTableViewController()
-        view.configure(with: .init(repository: .init(NetworkRepository())))
+        view.configure(with: .init(repositories: .init(
+            series: .init(NetworkRepository()),
+            tables: .init(NetworkRepository()))))
         return .init(rootViewController: view)
     }
 }

@@ -17,6 +17,18 @@
 		1656411E244B087E0036FFDE /* ConfiguringWithModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1656411D244B087E0036FFDE /* ConfiguringWithModel.swift */; };
 		16564120244B08BF0036FFDE /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1656411F244B08BF0036FFDE /* UIConstants.swift */; };
 		16564122244B09020036FFDE /* SegmentedControlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16564121244B09020036FFDE /* SegmentedControlModel.swift */; };
+		16734E07244C7FC6006F6DF8 /* DateRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16734E06244C7FC6006F6DF8 /* DateRange.swift */; };
+		16734E09244C7FFE006F6DF8 /* DateRangePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16734E08244C7FFE006F6DF8 /* DateRangePicker.swift */; };
+		16734E0B244C8092006F6DF8 /* DateRangePickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16734E0A244C8092006F6DF8 /* DateRangePickerModel.swift */; };
+		16734E0D244CA64B006F6DF8 /* UITableViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16734E0C244CA64B006F6DF8 /* UITableViewFactory.swift */; };
+		16734E10244CA6ED006F6DF8 /* ExchangeRatesContaining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16734E0F244CA6ED006F6DF8 /* ExchangeRatesContaining.swift */; };
+		16734E12244CA73D006F6DF8 /* ExchangeRatesTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16734E11244CA73D006F6DF8 /* ExchangeRatesTableViewDataSource.swift */; };
+		16734E16244CA83D006F6DF8 /* ExchangeRateTableRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16734E15244CA83D006F6DF8 /* ExchangeRateTableRepositories.swift */; };
+		16734E18244CA884006F6DF8 /* ExchangeRatesSeriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16734E17244CA884006F6DF8 /* ExchangeRatesSeriesViewModel.swift */; };
+		16734E1C244CA956006F6DF8 /* ActivityIndicableAndRefreshableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16734E1B244CA956006F6DF8 /* ActivityIndicableAndRefreshableViewModel.swift */; };
+		16734E1E244CA9BF006F6DF8 /* ActivityIndicableAndRefreshableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16734E1D244CA9BF006F6DF8 /* ActivityIndicableAndRefreshableView.swift */; };
+		16734E20244CAA41006F6DF8 /* ExchangeRatesSeriesSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16734E1F244CAA41006F6DF8 /* ExchangeRatesSeriesSpecification.swift */; };
+		16734E23244CB212006F6DF8 /* ExchangeRatesSeriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16734E22244CB212006F6DF8 /* ExchangeRatesSeriesViewController.swift */; };
 		167ED8D3244C3F6300725C4A /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167ED8D2244C3F6300725C4A /* Label.swift */; };
 		167ED8D5244C3F8800725C4A /* LabelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167ED8D4244C3F8800725C4A /* LabelModel.swift */; };
 		167ED8D7244C401200725C4A /* UITableViewCellRegisteringAndDequeuing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167ED8D6244C401200725C4A /* UITableViewCellRegisteringAndDequeuing.swift */; };
@@ -42,6 +54,8 @@
 		16AEA309244B0FB800AFF841 /* SegmentedControlModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AEA308244B0FB800AFF841 /* SegmentedControlModelTests.swift */; };
 		16B1FED9244C213700B11886 /* ExchangeRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B1FED8244C213700B11886 /* ExchangeRateView.swift */; };
 		16B1FEDB244C23BD00B11886 /* ExchangeRateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B1FEDA244C23BD00B11886 /* ExchangeRateViewModel.swift */; };
+		16EA18EF244C617E00584742 /* ExchangeRatesSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EA18EE244C617E00584742 /* ExchangeRatesSeries.swift */; };
+		16EA18F1244C640900584742 /* ExchangeRatesSeriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EA18F0244C640900584742 /* ExchangeRatesSeriesView.swift */; };
 		16ED83A5244AD9D000F3CF97 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ED83A4244AD9D000F3CF97 /* SegmentedControl.swift */; };
 		64907D7526E6871F1A661A55 /* Pods_JustCurrency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C13896D77C41FEFBC61310E /* Pods_JustCurrency.framework */; };
 		6793BE694EDFD46915C2E643 /* Pods_JustCurrencyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8274D343733DEA2CB6E32EA0 /* Pods_JustCurrencyTests.framework */; };
@@ -68,6 +82,18 @@
 		1656411D244B087E0036FFDE /* ConfiguringWithModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguringWithModel.swift; sourceTree = "<group>"; };
 		1656411F244B08BF0036FFDE /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
 		16564121244B09020036FFDE /* SegmentedControlModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlModel.swift; sourceTree = "<group>"; };
+		16734E06244C7FC6006F6DF8 /* DateRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateRange.swift; sourceTree = "<group>"; };
+		16734E08244C7FFE006F6DF8 /* DateRangePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateRangePicker.swift; sourceTree = "<group>"; };
+		16734E0A244C8092006F6DF8 /* DateRangePickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateRangePickerModel.swift; sourceTree = "<group>"; };
+		16734E0C244CA64B006F6DF8 /* UITableViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewFactory.swift; sourceTree = "<group>"; };
+		16734E0F244CA6ED006F6DF8 /* ExchangeRatesContaining.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesContaining.swift; sourceTree = "<group>"; };
+		16734E11244CA73D006F6DF8 /* ExchangeRatesTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesTableViewDataSource.swift; sourceTree = "<group>"; };
+		16734E15244CA83D006F6DF8 /* ExchangeRateTableRepositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateTableRepositories.swift; sourceTree = "<group>"; };
+		16734E17244CA884006F6DF8 /* ExchangeRatesSeriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesSeriesViewModel.swift; sourceTree = "<group>"; };
+		16734E1B244CA956006F6DF8 /* ActivityIndicableAndRefreshableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicableAndRefreshableViewModel.swift; sourceTree = "<group>"; };
+		16734E1D244CA9BF006F6DF8 /* ActivityIndicableAndRefreshableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicableAndRefreshableView.swift; sourceTree = "<group>"; };
+		16734E1F244CAA41006F6DF8 /* ExchangeRatesSeriesSpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesSeriesSpecification.swift; sourceTree = "<group>"; };
+		16734E22244CB212006F6DF8 /* ExchangeRatesSeriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesSeriesViewController.swift; sourceTree = "<group>"; };
 		167ED8D2244C3F6300725C4A /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		167ED8D4244C3F8800725C4A /* LabelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelModel.swift; sourceTree = "<group>"; };
 		167ED8D6244C401200725C4A /* UITableViewCellRegisteringAndDequeuing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellRegisteringAndDequeuing.swift; sourceTree = "<group>"; };
@@ -97,6 +123,8 @@
 		16AEA308244B0FB800AFF841 /* SegmentedControlModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlModelTests.swift; sourceTree = "<group>"; };
 		16B1FED8244C213700B11886 /* ExchangeRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateView.swift; sourceTree = "<group>"; };
 		16B1FEDA244C23BD00B11886 /* ExchangeRateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateViewModel.swift; sourceTree = "<group>"; };
+		16EA18EE244C617E00584742 /* ExchangeRatesSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesSeries.swift; sourceTree = "<group>"; };
+		16EA18F0244C640900584742 /* ExchangeRatesSeriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesSeriesView.swift; sourceTree = "<group>"; };
 		16ED83A4244AD9D000F3CF97 /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
 		2285ECCED5D6C150231E806A /* Pods-JustCurrency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustCurrency.release.xcconfig"; path = "Target Support Files/Pods-JustCurrency/Pods-JustCurrency.release.xcconfig"; sourceTree = "<group>"; };
 		3C13896D77C41FEFBC61310E /* Pods_JustCurrency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JustCurrency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,14 +154,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1642C87A244B3DA300F5DF5E /* CustomView */ = {
+		1642C87A244B3DA300F5DF5E /* Custom */ = {
 			isa = PBXGroup;
 			children = (
 				16895FB7244B39E000925113 /* CustomView.swift */,
 				1642C87B244B3DBE00F5DF5E /* CustomViewController.swift */,
 				1642C87F244B414D00F5DF5E /* CustomViewContaining.swift */,
 			);
-			path = CustomView;
+			path = Custom;
 			sourceTree = "<group>";
 		};
 		1642C881244B41E800F5DF5E /* View */ = {
@@ -154,9 +182,79 @@
 			path = Item;
 			sourceTree = "<group>";
 		};
+		16734E05244C7FB9006F6DF8 /* DateRangePicker */ = {
+			isa = PBXGroup;
+			children = (
+				16734E06244C7FC6006F6DF8 /* DateRange.swift */,
+				16734E08244C7FFE006F6DF8 /* DateRangePicker.swift */,
+				16734E0A244C8092006F6DF8 /* DateRangePickerModel.swift */,
+			);
+			path = DateRangePicker;
+			sourceTree = "<group>";
+		};
+		16734E0E244CA687006F6DF8 /* ExchangeRates */ = {
+			isa = PBXGroup;
+			children = (
+				16A5316C244B3540004D7927 /* Table */,
+				16734E13244CA7C2006F6DF8 /* Series */,
+				16B1FED7244C208800B11886 /* Item */,
+				16734E11244CA73D006F6DF8 /* ExchangeRatesTableViewDataSource.swift */,
+				16734E0F244CA6ED006F6DF8 /* ExchangeRatesContaining.swift */,
+			);
+			path = ExchangeRates;
+			sourceTree = "<group>";
+		};
+		16734E13244CA7C2006F6DF8 /* Series */ = {
+			isa = PBXGroup;
+			children = (
+				16734E1F244CAA41006F6DF8 /* ExchangeRatesSeriesSpecification.swift */,
+				16EA18EE244C617E00584742 /* ExchangeRatesSeries.swift */,
+				16734E21244CB1FC006F6DF8 /* View */,
+				16734E17244CA884006F6DF8 /* ExchangeRatesSeriesViewModel.swift */,
+			);
+			path = Series;
+			sourceTree = "<group>";
+		};
+		16734E14244CA828006F6DF8 /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				16734E15244CA83D006F6DF8 /* ExchangeRateTableRepositories.swift */,
+				16A53164244B2A94004D7927 /* ExchangeRateTableSpecification.swift */,
+			);
+			path = DataAccess;
+			sourceTree = "<group>";
+		};
+		16734E19244CA8E8006F6DF8 /* ActivityIndicableAndRefreshable */ = {
+			isa = PBXGroup;
+			children = (
+				16734E1D244CA9BF006F6DF8 /* ActivityIndicableAndRefreshableView.swift */,
+				16734E1B244CA956006F6DF8 /* ActivityIndicableAndRefreshableViewModel.swift */,
+			);
+			path = ActivityIndicableAndRefreshable;
+			sourceTree = "<group>";
+		};
+		16734E1A244CA902006F6DF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1642C87A244B3DA300F5DF5E /* Custom */,
+				16734E19244CA8E8006F6DF8 /* ActivityIndicableAndRefreshable */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		16734E21244CB1FC006F6DF8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				16EA18F0244C640900584742 /* ExchangeRatesSeriesView.swift */,
+				16734E22244CB212006F6DF8 /* ExchangeRatesSeriesViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		167ED8D0244C3F3500725C4A /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				16734E05244C7FB9006F6DF8 /* DateRangePicker */,
 				167ED8D1244C3F4400725C4A /* Label */,
 				16ED83A6244AF10B00F3CF97 /* SegmentedControl */,
 			);
@@ -220,8 +318,9 @@
 			children = (
 				1656411F244B08BF0036FFDE /* UIConstants.swift */,
 				167ED8D0244C3F3500725C4A /* Controls */,
-				1642C87A244B3DA300F5DF5E /* CustomView */,
+				16734E1A244CA902006F6DF8 /* Views */,
 				167ED8D6244C401200725C4A /* UITableViewCellRegisteringAndDequeuing.swift */,
+				16734E0C244CA64B006F6DF8 /* UITableViewFactory.swift */,
 			);
 			path = UserInterface;
 			sourceTree = "<group>";
@@ -274,16 +373,15 @@
 			path = Action;
 			sourceTree = "<group>";
 		};
-		16A5316C244B3540004D7927 /* ExchangeRateTable */ = {
+		16A5316C244B3540004D7927 /* Table */ = {
 			isa = PBXGroup;
 			children = (
-				16A53164244B2A94004D7927 /* ExchangeRateTableSpecification.swift */,
+				16734E14244CA828006F6DF8 /* DataAccess */,
 				16A53166244B2B0D004D7927 /* ExchangeRateTable.swift */,
 				1642C881244B41E800F5DF5E /* View */,
 				1642C87D244B3F9D00F5DF5E /* ExchangeRateTableViewModel.swift */,
-				16B1FED7244C208800B11886 /* Item */,
 			);
-			path = ExchangeRateTable;
+			path = Table;
 			sourceTree = "<group>";
 		};
 		16A71AC7244ACF0B0092E013 = {
@@ -311,7 +409,7 @@
 			children = (
 				16A71AD3244ACF0B0092E013 /* AppDelegate.swift */,
 				16A0EEA9244B16AE00D44E09 /* DataAccess */,
-				16A5316C244B3540004D7927 /* ExchangeRateTable */,
+				16734E0E244CA687006F6DF8 /* ExchangeRates */,
 				16895FB9244B3ABA00925113 /* UserInterface */,
 				167ED8D8244C406B00725C4A /* Utilities */,
 				16A71ADC244ACF0C0092E013 /* Assets.xcassets */,
@@ -563,15 +661,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16734E0B244C8092006F6DF8 /* DateRangePickerModel.swift in Sources */,
 				16B1FED9244C213700B11886 /* ExchangeRateView.swift in Sources */,
+				16734E20244CAA41006F6DF8 /* ExchangeRatesSeriesSpecification.swift in Sources */,
 				16A0EEB4244B199700D44E09 /* NetworkRepository.swift in Sources */,
+				16734E23244CB212006F6DF8 /* ExchangeRatesSeriesViewController.swift in Sources */,
 				167ED8D5244C3F8800725C4A /* LabelModel.swift in Sources */,
 				1656411C244B05D80036FFDE /* SegmentedControlItemModel.swift in Sources */,
 				1642C87C244B3DBE00F5DF5E /* CustomViewController.swift in Sources */,
+				16734E10244CA6ED006F6DF8 /* ExchangeRatesContaining.swift in Sources */,
+				16734E09244C7FFE006F6DF8 /* DateRangePicker.swift in Sources */,
 				16A0EEB9244B1AD700D44E09 /* NetworkSpecification.swift in Sources */,
+				16734E12244CA73D006F6DF8 /* ExchangeRatesTableViewDataSource.swift in Sources */,
 				16895FB8244B39E000925113 /* CustomView.swift in Sources */,
 				16A0EEAF244B177200D44E09 /* Specification.swift in Sources */,
 				1642C880244B414D00F5DF5E /* CustomViewContaining.swift in Sources */,
+				16734E1E244CA9BF006F6DF8 /* ActivityIndicableAndRefreshableView.swift in Sources */,
 				167ED8DA244C409D00725C4A /* CellReusing.swift in Sources */,
 				1656411E244B087E0036FFDE /* ConfiguringWithModel.swift in Sources */,
 				16A53165244B2A94004D7927 /* ExchangeRateTableSpecification.swift in Sources */,
@@ -579,22 +684,29 @@
 				167ED8D7244C401200725C4A /* UITableViewCellRegisteringAndDequeuing.swift in Sources */,
 				16A0EEBB244B1B0100D44E09 /* NetworkRoute.swift in Sources */,
 				16A0EEB2244B195800D44E09 /* RepositoryAction.swift in Sources */,
+				16734E18244CA884006F6DF8 /* ExchangeRatesSeriesViewModel.swift in Sources */,
+				16EA18F1244C640900584742 /* ExchangeRatesSeriesView.swift in Sources */,
 				16A53169244B2C94004D7927 /* AnyRepository.swift in Sources */,
 				167ED8D3244C3F6300725C4A /* Label.swift in Sources */,
 				16564122244B09020036FFDE /* SegmentedControlModel.swift in Sources */,
+				16734E0D244CA64B006F6DF8 /* UITableViewFactory.swift in Sources */,
 				16A0EEBD244B1C6400D44E09 /* RepositoryActionError.swift in Sources */,
 				1642C883244B41F900F5DF5E /* ExchangeRateTableViewController.swift in Sources */,
+				16734E1C244CA956006F6DF8 /* ActivityIndicableAndRefreshableViewModel.swift in Sources */,
 				16A0EEB7244B1A4400D44E09 /* NetworkRepositoryAction.swift in Sources */,
 				1656411A244B05A50036FFDE /* SegmentedControlItem.swift in Sources */,
 				1642C879244B3D2600F5DF5E /* ExchangeRateTableView.swift in Sources */,
 				16ED83A5244AD9D000F3CF97 /* SegmentedControl.swift in Sources */,
 				16A5316B244B30EB004D7927 /* ExchangeRate.swift in Sources */,
+				16734E16244CA83D006F6DF8 /* ExchangeRateTableRepositories.swift in Sources */,
 				1642C87E244B3F9D00F5DF5E /* ExchangeRateTableViewModel.swift in Sources */,
 				16A71AD4244ACF0B0092E013 /* AppDelegate.swift in Sources */,
+				16734E07244C7FC6006F6DF8 /* DateRange.swift in Sources */,
 				16B1FEDB244C23BD00B11886 /* ExchangeRateViewModel.swift in Sources */,
 				16A0EEAC244B16E600D44E09 /* Repository.swift in Sources */,
 				16A53167244B2B0D004D7927 /* ExchangeRateTable.swift in Sources */,
 				167ED8E2244C459100725C4A /* ExchangeRateCell.swift in Sources */,
+				16EA18EF244C617E00584742 /* ExchangeRatesSeries.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

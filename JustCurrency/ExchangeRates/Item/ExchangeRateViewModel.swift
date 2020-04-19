@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ExchangeRateViewModel {
+final class ExchangeRateViewModel {
 
     static let cellReuseIdentifier = "ExchangeRateCell"
 
@@ -17,6 +17,10 @@ struct ExchangeRateViewModel {
         formatter.dateStyle = .short
         return formatter
     }()
+
+    var onClicked: ((ExchangeRate) -> Void)?
+
+    private let rate: ExchangeRate
 
     // MARK: - Labels
 
@@ -33,17 +37,23 @@ struct ExchangeRateViewModel {
 
     // MARK: -
 
-    init(_ rate: ExchangeRate, table: ExchangeRateTable) {
+    init(_ rate: ExchangeRate, table: ExchangeRateTable? = nil) {
         averageRate = Self.createRate("Average", value: rate.averageRate)
         purchaseRate = Self.createRate("Purchase", value: rate.purchaseRate)
         sellingRate = Self.createRate("Selling", value: rate.sellingRate)
 
         code = .init(rate.code)
 
-        effectiveDate = Self.createDate("Effective", from: table.effectiveDate)
-        tradingDate = Self.createDate("Trading", from: table.tradingDate)
+        effectiveDate = Self.createDate("Effective", from: rate.effectiveDate ?? table?.effectiveDate)
+        tradingDate = Self.createDate("Trading", from: table?.tradingDate)
 
         name = .init(rate.name)
+
+        self.rate = rate
+    }
+
+    func clicked() {
+        onClicked?(rate)
     }
 
     // MARK: - Creating the Labels

@@ -20,7 +20,7 @@ final class SegmentedControl: CustomView {
 
     // MARK: - Colors
 
-    var borderColor = UIColor.label {
+    var borderColor = UIColor.link {
         didSet {
             items.forEach { $0.separatorColor = borderColor }
             updateBorderColor()
@@ -33,7 +33,7 @@ final class SegmentedControl: CustomView {
         didSet { items.forEach { $0.normalBackgroundColor = normalItemBackgroundColor } }
     }
 
-    var selectedItemBackgroundColor = UIColor.label {
+    var selectedItemBackgroundColor = UIColor.link {
         didSet { items.forEach { $0.selectedBackgroundColor = selectedItemBackgroundColor } }
     }
 

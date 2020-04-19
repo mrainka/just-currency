@@ -33,6 +33,7 @@ final class ExchangeRateCell: UITableViewCell {
 
     private func addCustomView() {
         let customView = ExchangeRateView(frame: .zero)
+        customView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(clicked)))
         customView.backgroundColor = .secondarySystemBackground
         customView.clipsToBounds = true
         customView.layer.borderWidth = .pixel
@@ -40,6 +41,10 @@ final class ExchangeRateCell: UITableViewCell {
         contentView.addSubview(customView)
         self.customView = customView
         updateBorderColorOfCustomView()
+    }
+
+    @objc private func clicked() {
+        model?.clicked()
     }
 
     private func configureLayoutOfCustomView() {

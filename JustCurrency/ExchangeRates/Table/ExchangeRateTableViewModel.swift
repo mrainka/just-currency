@@ -13,14 +13,16 @@ final class ExchangeRateTableViewModel {
     var onEndRefreshingRequested: (() -> Void)?
     let showingActivity = BehaviorRelay(value: false)
 
+    var onOpenSeriesRequested: ((ExchangeRatesSeriesViewModel) -> Void)?
+
     let rates = BehaviorRelay(value: [ExchangeRateViewModel]())
     let typeControl = SegmentedControlModel(items: ["A", "B", "C"], selectedItem: "A")
 
-    private let repository: AnyRepository<[ExchangeRateTable]>
+    private let repositories: ExchangeRateTableRepositories
     private weak var repositoryAction: RepositoryAction?
 
-    init(repository: AnyRepository<[ExchangeRateTable]>) {
-        self.repository = repository
+    init(repositories: ExchangeRateTableRepositories) {
+        self.repositories = repositories
 
         typeControl.onSelected = { [unowned self] _ in
             self.showingActivity.accept(true)
@@ -32,7 +34,7 @@ final class ExchangeRateTableViewModel {
         repositoryAction?.cancel()
 
         guard let type = typeControl.selectedItem else {
-            hideActivity()
+            hideActivityAndEndRefreshing()
             return
         }
 
@@ -40,10 +42,10 @@ final class ExchangeRateTableViewModel {
             showingActivity.accept(true)
         }
 
-        repositoryAction = repository.query(ExchangeRateTableSpecification(type: type)) { [weak self] in
+        repositoryAction = repositories.tables.query(ExchangeRateTableSpecification(type: type)) { [weak self] in
             guard let `self` = self else { return }
 
-            self.hideActivity()
+            self.hideActivityAndEndRefreshing()
 
             switch $0 {
             case .failure:
@@ -51,13 +53,24 @@ final class ExchangeRateTableViewModel {
                 break
             case .success(let tables):
                 guard let table = tables.first else { break }
-                self.rates.accept(table.rates.map { .init($0, table: table) })
+
+                let rates: [ExchangeRateViewModel] = table.rates.map {
+                    let rate = ExchangeRateViewModel($0, table: table)
+                    rate.onClicked = { [weak self] in self?.openSeries(for: $0) }
+                    return rate
+                }
+
+                self.rates.accept(rates)
             }
         }
     }
 
-    private func hideActivity() {
-        showingActivity.accept(false)
-        onEndRefreshingRequested?()
+    private func openSeries(for rate: ExchangeRate) {
+        guard let type = typeControl.selectedItem else { return }
+        onOpenSeriesRequested?(.init(tableType: type, rate: rate, repository: repositories.series))
     }
 }
+
+extension ExchangeRateTableViewModel: ActivityIndicableAndRefreshableViewModel {}
+
+extension ExchangeRateTableViewModel: ExchangeRatesContaining {}

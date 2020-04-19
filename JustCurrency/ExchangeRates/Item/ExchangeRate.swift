@@ -6,6 +6,8 @@
 //  Copyright © 2020 Marcin Rainka. All rights reserved.
 //
 
+import Foundation
+
 struct ExchangeRate {
 
     private enum CodingKeys: String, CodingKey {
@@ -17,15 +19,19 @@ struct ExchangeRate {
         case code
 
         case name = "currency"
+
+        case effectiveDate
     }
 
     let averageRate: Double?
     let purchaseRate: Double?
     let sellingRate: Double?
 
-    let code: String
+    let code: String?
 
-    let name: String
+    let name: String?
+
+    let effectiveDate: Date?
 }
 
 extension ExchangeRate: Decodable {
@@ -37,8 +43,10 @@ extension ExchangeRate: Decodable {
         purchaseRate = try? container.decode(Double.self, forKey: .purchaseRate)
         sellingRate = try? container.decode(Double.self, forKey: .sellingRate)
 
-        code = try container.decode(String.self, forKey: .code)
+        code = try? container.decode(String.self, forKey: .code)
 
-        name = try container.decode(String.self, forKey: .name)
+        name = try? container.decode(String.self, forKey: .name)
+
+        effectiveDate = try? container.decode(Date.self, forKey: .effectiveDate)
     }
 }

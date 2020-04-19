@@ -11,11 +11,22 @@ import Alamofire
 enum NetworkRoute {
 
     case exchangeRateTable(type: String)
+    case exchangeRatesSeries(tableType: String, currencyCode: String, range: DateRange)
+
+    private static let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        return formatter
+    }()
 
     private var path: String {
         switch self {
         case .exchangeRateTable(let type):
             return "/tables/" + type
+        case .exchangeRatesSeries(let tableType, let currencyCode, range: let range):
+            let startDate = Self.dateFormatter.string(from: range.start)
+            let endDate = Self.dateFormatter.string(from: range.end)
+            return "/rates/\(tableType)/\(currencyCode)/\(startDate)/\(endDate)"
         }
     }
 }
